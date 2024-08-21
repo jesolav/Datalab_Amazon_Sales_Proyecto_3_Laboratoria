@@ -45,7 +45,7 @@ Este archivo contiene información sobre las reseñas de productos en Amazon. La
 - **rating**: Calificación dada por el usuario al producto.
 - **rating_count**: Número total de veces que el producto ha sido calificado.
 </details>
-
+</details>
 
 ### 💻 [Procesamiento y preparación para analisis de datos:] 
 
