@@ -56,3 +56,5 @@ Este archivo contiene información sobre las reseñas de productos en Amazon. La
 [1.3 Resumen Estadístico Inicial](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/76141509eea0d896627cc1ef6f0f692f789fa9e8/An%C3%A1lisis%20Exploratorio/1.3%20Resumen%20Estad%C3%ADstico%20Inicial.md)
 
 [1.4 Distribución de categorías y calificaciones](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/76141509eea0d896627cc1ef6f0f692f789fa9e8/An%C3%A1lisis%20Exploratorio/1.4%20Distribuci%C3%B3n%20de%20categor%C3%ADas%20y%20calificaciones.md)
+
+
