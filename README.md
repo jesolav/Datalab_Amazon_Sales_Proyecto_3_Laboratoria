@@ -49,15 +49,19 @@ Este archivo contiene información sobre las reseñas de productos en Amazon. La
 
 ### 💻 [Procesamiento y preparación para analisis de datos:] 
 
-[Conectar/importar datos a herramientas](https://github.com/jesolav/Riesgo_Relativo_Proyecto_3_Laboratoria-/blob/01d3cde026e2852c46698d89d54d617758d478b1/%5BProcesamiento%20y%20preparaci%C3%B3n%20para%20analisis%20de%20datos%3A/2.1%20Conectar%20e%20importar%20datos%20a%20herramientas.md)
+[Conectar/importar datos a herramientas](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/b7f14cd33699709b2549fd514aa340fb3ed7be12/An%C3%A1lisis%20Exploratorio/1.1%20Conectar-importar%20datos%20a%20herramientas.md)
 
-[1.2 Análisis de nulos y duplicados](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/76141509eea0d896627cc1ef6f0f692f789fa9e8/An%C3%A1lisis%20Exploratorio/1.2%20An%C3%A1lisis%20de%20Nulos%20y%20Duplicados.md)
+[1.2 Análisis de nulos y duplicados](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/4aacf9902f7a362f93eb085b41be08d4dc376c90/An%C3%A1lisis%20Exploratorio/1.2%20An%C3%A1lisis%20de%20Nulos%20y%20Duplicados.md)
 
-[1.3 Resumen Estadístico Inicial](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/76141509eea0d896627cc1ef6f0f692f789fa9e8/An%C3%A1lisis%20Exploratorio/1.3%20Resumen%20Estad%C3%ADstico%20Inicial.md)
+[1.3 Identificar Y Manejar Datos Fuera Del Alcance Del Análisis](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/76141509eea0d896627cc1ef6f0f692f789fa9e8/An%C3%A1lisis%20Exploratorio/1.3%20Resumen%20Estad%C3%ADstico%20Inicial.md)
 
-[1.4 Distribución de categorías y calificaciones](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/76141509eea0d896627cc1ef6f0f692f789fa9e8/An%C3%A1lisis%20Exploratorio/1.4%20Distribuci%C3%B3n%20de%20categor%C3%ADas%20y%20calificaciones.md)
+[1.4 Identificar Y Manejar Datos Discrepantes En Variables Categóricas](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/4aacf9902f7a362f93eb085b41be08d4dc376c90/An%C3%A1lisis%20Exploratorio/1.4%20Distribuci%C3%B3n%20de%20categor%C3%ADas%20y%20calificaciones.md)
 
+[1.5 Identificar Y Manejar Datos Discrepantes En Variables Numéricas](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/4aacf9902f7a362f93eb085b41be08d4dc376c90/An%C3%A1lisis%20Exploratorio/1.5%20Identificar%20Y%20Manejar%20Datos%20Discrepantes%20En%20Variables%20Num%C3%A9ricas.md)
 
+[1.6 Comprobar Y Cambiar Tipo De Dato](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/4aacf9902f7a362f93eb085b41be08d4dc376c90/An%C3%A1lisis%20Exploratorio/1.6%20Comprobar%20Y%20Cambiar%20Tipo%20De%20Dato.md)
+
+[1.7 Crear Nuevas Variables](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/639fc6e53b72b0af13014e4f64df5504d8d09a3c/An%C3%A1lisis%20Exploratorio/1.7%20Crear%20Nuevas%20Variables.md)
 
 
 
