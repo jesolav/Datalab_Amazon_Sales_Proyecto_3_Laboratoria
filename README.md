@@ -49,7 +49,7 @@ Este archivo contiene información sobre las reseñas de productos en Amazon. La
 
 ### 💻 [Procesamiento y preparación para analisis de datos:] 
 
-[Conectar/importar datos a herramientas](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/b7f14cd33699709b2549fd514aa340fb3ed7be12/An%C3%A1lisis%20Exploratorio/1.1%20Conectar-importar%20datos%20a%20herramientas.md)
+[1.1 Conectar/importar datos a herramientas](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/b7f14cd33699709b2549fd514aa340fb3ed7be12/An%C3%A1lisis%20Exploratorio/1.1%20Conectar-importar%20datos%20a%20herramientas.md)
 
 [1.2 Análisis de nulos y duplicados](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/4aacf9902f7a362f93eb085b41be08d4dc376c90/An%C3%A1lisis%20Exploratorio/1.2%20An%C3%A1lisis%20de%20Nulos%20y%20Duplicados.md)
 
