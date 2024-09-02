@@ -1,73 +1,132 @@
-### 1.2 Análisis de nulos y duplicados
+### 1.7 Estandarización de tabla amazon_reviews para análisis de sentimientos
 
-## NULOS: 
-
-# **Verificar valores nulos en la tabla amazon_product**
+La tabla amazon_reviews contiene información agrupada de diferentes usuarios en una misma fila lo que dificulta realizar un correcto análisis de sentimiento. Para ello, se genera una nueva tabla extendida, separando los user_id, user_name, review_id y review_title.
 
 ```sql
-SELECT 
-  COUNT(*) AS total_filas,
-  SUM(CASE WHEN product_id IS NULL THEN 1 ELSE 0 END) AS nulos_product_id,
-  SUM(CASE WHEN product_name IS NULL THEN 1 ELSE 0 END) AS nulos_product_name,
-  SUM(CASE WHEN category IS NULL THEN 1 ELSE 0 END) AS nulos_category,
-  SUM(CASE WHEN discounted_price IS NULL THEN 1 ELSE 0 END) AS nulos_discounted_price,
-  SUM(CASE WHEN actual_price IS NULL THEN 1 ELSE 0 END) AS nulos_actual_price,
-  SUM(CASE WHEN discount_percentage IS NULL THEN 1 ELSE 0 END) AS nulos_discount_percentage,
-  SUM(CASE WHEN about_product IS NULL THEN 1 ELSE 0 END) AS nulos_about_product
-FROM `datalab-433117.dataset.amazon_product`;
+CREATE TABLE `datalab-433117.dataset.new_amazon_reviews` AS
+WITH split_data AS (
+  SELECT
+    SPLIT(user_id, ',') AS user_id_array,
+    SPLIT(user_name, ',') AS user_name_array,
+    SPLIT(review_id, ',') AS review_id_array,
+    SPLIT(review_title, ',') AS review_title_array,
+    review_content,
+    img_link,
+    product_link,
+    product_id,
+    rating,
+    rating_count,
+    ARRAY_LENGTH(SPLIT(user_id, ',')) AS array_length
+  FROM
+    `datalab-433117.dataset.amazon_review_cleaned`
+),
+exploded_data AS (
+  SELECT
+    user_id_array[SAFE_OFFSET(idx)] AS user_id,
+    user_name_array[SAFE_OFFSET(idx)] AS user_name,
+    review_id_array[SAFE_OFFSET(idx)] AS review_id,
+    review_title_array[SAFE_OFFSET(idx)] AS review_title,
+    review_content,
+    img_link,
+    product_link,
+    product_id,
+    rating,
+    rating_count
+  FROM
+    split_data,
+    UNNEST(GENERATE_ARRAY(0, array_length-1)) AS idx
+)
+SELECT
+  user_id,
+  user_name,
+  review_id,
+  review_title,
+  review_content,
+  img_link,
+  product_link,
+  product_id,
+  rating,
+  rating_count
+FROM
+  exploded_data;
 ```
 
-![image](https://github.com/user-attachments/assets/9fcf4dfc-624b-4bc2-9094-e6183cc71d0a)
+# **Verificamos cantidad de product_id unicos new_amazon_reviews**
 
-
-
-# **Verificar valores nulos en la tabla amazon_review**
 ```sql
-SELECT 
-  COUNT(*) AS total_filas,
-  SUM(CASE WHEN user_id IS NULL THEN 1 ELSE 0 END) AS nulos_user_id,
-  SUM(CASE WHEN user_name IS NULL THEN 1 ELSE 0 END) AS nulos_user_name,
-  SUM(CASE WHEN review_id IS NULL THEN 1 ELSE 0 END) AS nulos_review_id,
-  SUM(CASE WHEN review_title IS NULL THEN 1 ELSE 0 END) AS nulos_review_title,
-  SUM(CASE WHEN review_content IS NULL THEN 1 ELSE 0 END) AS nulos_review_content,
-  SUM(CASE WHEN img_link IS NULL THEN 1 ELSE 0 END) AS nulos_img_link,
-  SUM(CASE WHEN product_link IS NULL THEN 1 ELSE 0 END) AS nulos_product_link,
-  SUM(CASE WHEN product_id IS NULL THEN 1 ELSE 0 END) AS nulos_product_id,
-  SUM(CASE WHEN rating IS NULL THEN 1 ELSE 0 END) AS nulos_rating,
-  SUM(CASE WHEN rating_count IS NULL THEN 1 ELSE 0 END) AS nulos_rating_count
-FROM `datalab-433117.dataset.amazon_review`;
+SELECT
+  COUNT(DISTINCT product_id) AS unique_product_count
+
+ FROM `datalab-433117.dataset.new_amazon_reviews`
 ```
-![image](https://github.com/user-attachments/assets/4c5a98bf-4e99-47d1-9f8b-a7b71a249823)
+![Captura de pantalla 2024-08-30 115316](https://github.com/user-attachments/assets/fbff6045-1af3-4110-a5f5-03f2aaa9b0ee)
 
 
-# DUPLICADOS ------
 
--- Detectar duplicados en la tabla amazon_product
+Eliminación de Caracteres No Deseados:
+Se ejecutó una consulta que utiliza la función REGEXP_REPLACE para limpiar las columnas review_content, user_name, y review_title. Esta operación eliminó todos los caracteres no pertenecientes al conjunto ASCII estándar (caracteres en otros idiomas, emojis, y símbolos especiales).
+Consulta Utilizada:
+
 ```sql
-SELECT 
-  product_id, 
-  COUNT(*) AS conteo_duplicados 
-FROM `datalab-433117.dataset.amazon_product`
-GROUP BY product_id
-HAVING COUNT(*) > 1;
+CREATE OR REPLACE TABLE `datalab-433116.dataset.new_amazon_reviews` AS
+SELECT
+  product_id,
+  rating,
+  rating_count,
+  REGEXP_REPLACE(review_content, r'[^\x00-\x7F]', '') AS review_content,
+  img_link,
+  product_link,
+  review_id,
+  REGEXP_REPLACE(user_name, r'[^\x00-\x7F]', '') AS user_name,
+  REGEXP_REPLACE(review_title, r'[^\x00-\x7F]', '') AS review_title
+FROM
+  `datalab-433116.dataset.new_amazon_reviews`;
 ```
 
+Eliminación de Filas con Valores Nulos:
+Posteriormente, se filtraron las filas que tenían valores nulos en la columna review_title. Esta operación asegura que la tabla solo contenga reseñas con títulos válidos, eliminando cualquier reseña con un título faltante.
+Consulta Utilizada:
 
-
--- Detectar duplicados en la tabla amazon_review
 ```sql
-SELECT 
-  review_id, 
-  COUNT(*) AS conteo_duplicados 
-FROM `datalab-433117.dataset.amazon_review`
-GROUP BY review_id
-HAVING COUNT(*) > 1;
+CREATE OR REPLACE TABLE `datalab-433116.dataset.new_amazon_reviews` AS
+SELECT
+  *
+FROM
+  `datalab-433116.dataset.new_amazon_reviews`
+WHERE
+  review_title IS NOT NULL;
 ```
 
+Resultado
+La tabla new_amazon_reviews ahora contiene datos limpios, libres de caracteres no deseados y sin valores nulos en review_title. Esto mejora la calidad del análisis subsecuente y asegura la consistencia en las reseñas de productos.
+
 ```sql
+CREATE OR REPLACE TABLE `datalab-433116.dataset.new_amazon_reviews` AS
+SELECT
+  product_id,
+  rating,
+  rating_count,
+  REGEXP_REPLACE(review_content, r'[^\x00-\x7F]', '') AS review_content,
+  img_link,
+  product_link,
+  review_id,
+  REGEXP_REPLACE(user_name, r'[^\x00-\x7F]', '') AS user_name,
+  REGEXP_REPLACE(review_title, r'[^\x00-\x7F]', '') AS review_title
+FROM
+  `datalab-433116.dataset.new_amazon_reviews`;
 ```
 
+Eliminación de Filas con Valores Nulos:
+Posteriormente, se filtraron las filas que tenían valores nulos en la columna review_title. Esta operación asegura que la tabla solo contenga reseñas con títulos válidos, eliminando cualquier reseña con un título faltante.
+Consulta Utilizada:
 
 ```sql
+CREATE OR REPLACE TABLE `datalab-433116.dataset.new_amazon_reviews` AS
+SELECT
+  *
+FROM
+  `datalab-433116.dataset.new_amazon_reviews`
+WHERE
+  review_title IS NOT NULL;
 ```
 
