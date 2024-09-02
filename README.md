@@ -1,5 +1,10 @@
 # Datalab_Amazon_Sales_Proyecto_3_Laboratoria.
 
+**Objetivo:** 
+El propósito del este análisis, es entender mejor cómo se perciben los productos en Amazon por parte de los consumidores, identificar patrones en las calificaciones y reseñas, y utilizar esta información para tomar decisiones informadas que optimicen las estrategias de ventas, como ajustar precios, mejorar descripciones de productos, y enfocar los esfuerzos de marketing en categorías más exitosas.
+
+
+
 
 <details>
 <summary> ⚙️ Herramientas y Recursos</summary>
