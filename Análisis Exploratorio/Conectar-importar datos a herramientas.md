@@ -1,4 +1,4 @@
-### 1.2 Análisis de nulos y duplicados
+### 1.1 Conectar/importar datos a herramientas
 
 ## NULOS: 
 
