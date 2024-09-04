@@ -1,8 +1,7 @@
 
 # Cálculo de Cuartiles con BigQuery
 
-## Objetivo
-El objetivo de este análisis es calcular los cuartiles para tres variables de nuestro conjunto de datos: **precio original**, **precio descontado**, y el **score de sentimiento**. Los cuartiles nos permiten dividir los datos en cuatro partes iguales, proporcionando una visión clara de la distribución de los valores.
+Se calcularon los cuartiles para tres variables de nuestro conjunto de datos: **precio original**, **precio descontado**, y el **score de sentimiento**. Los cuartiles nos permiten dividir los datos en cuatro partes iguales, proporcionando una visión clara de la distribución de los valores.
 
 ## Fórmulas utilizadas
 Para calcular los cuartiles en BigQuery, utilizamos la función `PERCENTILE_CONT`. Esta función devuelve el valor del percentil deseado basado en una distribución continua de los datos.
@@ -72,5 +71,3 @@ SELECT * FROM cuartiles;
 
 - **Cuartil 4 (100%)**: El precio más alto en el dataset es **139900** para el precio original y **77990** para el precio descontado. El score de sentimiento es **0.78125**, lo que muestra una percepción bastante positiva.
 
-## Conclusión
-Estos cuartiles permiten obtener una visión clara de cómo se distribuyen los precios y los sentimientos en el dataset. Al dividir los datos en cuartiles, podemos entender mejor las tendencias de precios y cómo varían las opiniones de los usuarios según los rangos de precio.
