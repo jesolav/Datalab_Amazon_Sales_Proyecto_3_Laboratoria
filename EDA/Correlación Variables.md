@@ -1,73 +1,50 @@
-### 1.2 Análisis de nulos y duplicados
-
-## NULOS: 
-
-# **Verificar valores nulos en la tabla amazon_product**
+### 1.2 Correlación de Variables
 
 ```sql
-SELECT 
-  COUNT(*) AS total_filas,
-  SUM(CASE WHEN product_id IS NULL THEN 1 ELSE 0 END) AS nulos_product_id,
-  SUM(CASE WHEN product_name IS NULL THEN 1 ELSE 0 END) AS nulos_product_name,
-  SUM(CASE WHEN category IS NULL THEN 1 ELSE 0 END) AS nulos_category,
-  SUM(CASE WHEN discounted_price IS NULL THEN 1 ELSE 0 END) AS nulos_discounted_price,
-  SUM(CASE WHEN actual_price IS NULL THEN 1 ELSE 0 END) AS nulos_actual_price,
-  SUM(CASE WHEN discount_percentage IS NULL THEN 1 ELSE 0 END) AS nulos_discount_percentage,
-  SUM(CASE WHEN about_product IS NULL THEN 1 ELSE 0 END) AS nulos_about_product
-FROM `datalab-433117.dataset.amazon_product`;
+WITH correlations AS (
+  SELECT 
+    CORR(CAST(discounted_price AS FLOAT64), CAST(actual_price AS FLOAT64)) AS corr_discounted_actual,
+    CORR(CAST(discounted_price AS FLOAT64), CAST(discount_percentage AS FLOAT64)) AS corr_discounted_discount,
+    CORR(CAST(discounted_price AS FLOAT64), CAST(rating AS FLOAT64)) AS corr_discounted_rating,
+    CORR(CAST(discounted_price AS FLOAT64), CAST(rating_count AS FLOAT64)) AS corr_discounted_rating_count,
+    CORR(CAST(discounted_price AS FLOAT64), CAST(avg_sentiment AS FLOAT64)) AS corr_discounted_sentiment,
+    CORR(CAST(actual_price AS FLOAT64), CAST(discount_percentage AS FLOAT64)) AS corr_actual_discount,
+    CORR(CAST(actual_price AS FLOAT64), CAST(rating AS FLOAT64)) AS corr_actual_rating,
+    CORR(CAST(actual_price AS FLOAT64), CAST(rating_count AS FLOAT64)) AS corr_actual_rating_count,
+    CORR(CAST(actual_price AS FLOAT64), CAST(avg_sentiment AS FLOAT64)) AS corr_actual_sentiment,
+    CORR(CAST(discount_percentage AS FLOAT64), CAST(rating AS FLOAT64)) AS corr_discount_rating,
+    CORR(CAST(discount_percentage AS FLOAT64), CAST(rating_count AS FLOAT64)) AS corr_discount_rating_count,
+    CORR(CAST(discount_percentage AS FLOAT64), CAST(avg_sentiment AS FLOAT64)) AS corr_discount_sentiment,
+    CORR(CAST(rating AS FLOAT64), CAST(rating_count AS FLOAT64)) AS corr_rating_rating_count,
+    CORR(CAST(rating AS FLOAT64), CAST(avg_sentiment AS FLOAT64)) AS corr_rating_sentiment,
+    CORR(CAST(rating_count AS FLOAT64), CAST(avg_sentiment AS FLOAT64)) AS corr_rating_count_sentiment
+  FROM `datalab-433117.dataset.tabla_unificada`
+)
+
+SELECT * FROM correlations;
 ```
 
-![image](https://github.com/user-attachments/assets/9fcf4dfc-624b-4bc2-9094-e6183cc71d0a)
+![image](https://github.com/user-attachments/assets/ec58bd37-29cf-45a9-b3e0-52beaa6c27b7)
 
 
+# **Matriz de correlación en python**
+```python
+# Seleccionar las columnas para el análisis de correlación
+columns_for_correlation = ['discounted_price', 'actual_price', 'discount_percentage', 'rating', 'rating_count', 'avg_sentiment']
 
-# **Verificar valores nulos en la tabla amazon_review**
-```sql
-SELECT 
-  COUNT(*) AS total_filas,
-  SUM(CASE WHEN user_id IS NULL THEN 1 ELSE 0 END) AS nulos_user_id,
-  SUM(CASE WHEN user_name IS NULL THEN 1 ELSE 0 END) AS nulos_user_name,
-  SUM(CASE WHEN review_id IS NULL THEN 1 ELSE 0 END) AS nulos_review_id,
-  SUM(CASE WHEN review_title IS NULL THEN 1 ELSE 0 END) AS nulos_review_title,
-  SUM(CASE WHEN review_content IS NULL THEN 1 ELSE 0 END) AS nulos_review_content,
-  SUM(CASE WHEN img_link IS NULL THEN 1 ELSE 0 END) AS nulos_img_link,
-  SUM(CASE WHEN product_link IS NULL THEN 1 ELSE 0 END) AS nulos_product_link,
-  SUM(CASE WHEN product_id IS NULL THEN 1 ELSE 0 END) AS nulos_product_id,
-  SUM(CASE WHEN rating IS NULL THEN 1 ELSE 0 END) AS nulos_rating,
-  SUM(CASE WHEN rating_count IS NULL THEN 1 ELSE 0 END) AS nulos_rating_count
-FROM `datalab-433117.dataset.amazon_review`;
+# Calcular la matriz de correlación
+correlation_matrix = df_unificada[columns_for_correlation].corr()
+
+# Crear un mapa de calor con una paleta personalizada basada en los colores de Amazon
+amazon_cmap = LinearSegmentedColormap.from_list("amazon", ['#FF9900', '#146EB4'], N=50)
+
+# Mostrar el mapa de calor
+plt.figure(figsize=(10, 8))
+sns.heatmap(correlation_matrix, annot=True, cmap=amazon_cmap, fmt=".2f", linewidths=0.5)
+
+# Título del gráfico
+plt.title('Mapa de Calor de Correlaciones', color='#000000')
+plt.show()
 ```
-![image](https://github.com/user-attachments/assets/4c5a98bf-4e99-47d1-9f8b-a7b71a249823)
-
-
-# DUPLICADOS ------
-
--- Detectar duplicados en la tabla amazon_product
-```sql
-SELECT 
-  product_id, 
-  COUNT(*) AS conteo_duplicados 
-FROM `datalab-433117.dataset.amazon_product`
-GROUP BY product_id
-HAVING COUNT(*) > 1;
-```
-
-
-
--- Detectar duplicados en la tabla amazon_review
-```sql
-SELECT 
-  review_id, 
-  COUNT(*) AS conteo_duplicados 
-FROM `datalab-433117.dataset.amazon_review`
-GROUP BY review_id
-HAVING COUNT(*) > 1;
-```
-
-```sql
-```
-
-
-```sql
-```
+![image](https://github.com/user-attachments/assets/209ab4ba-900d-4d3c-84fe-aa6e197901f2)
 
