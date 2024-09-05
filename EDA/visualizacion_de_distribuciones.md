@@ -12,7 +12,7 @@ Este gráfico compara la distribución de los precios originales y los precios c
 
 ## 2. Distribución de Porcentajes de Descuento
 
-Este histograma muestra cómo se distribuyen los porcentajes de descuento en los productos. La mayoría de los productos tienen un descuento significativo entre el 70% y 80%.
+Este histograma muestra cómo se distribuyen los porcentajes de descuento en los productos. La mayoría de los productos tienen un descuento significativo entre el 40% y 60%.
 
 ![distribucion_porcentajes_descuento](https://github.com/user-attachments/assets/904f97df-d75d-4d54-a1dc-08e9024e2982)
 
