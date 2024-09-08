@@ -69,5 +69,16 @@ Este archivo contiene información sobre las reseñas de productos en Amazon. La
 [1.7 Crear Nuevas Variables](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/639fc6e53b72b0af13014e4f64df5504d8d09a3c/An%C3%A1lisis%20Exploratorio/1.7%20Crear%20Nuevas%20Variables.md)
 
 
+🔎 [Análisis exploratorio:]
+
+
+[2.1 Visualización de Distribuciones](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/aa8d3c891815b477a11a79f7bfb67b95e33b1a59/EDA/2.1%20Visualizaci%C3%B3n%20Distribuciones.md)
+
+[2.2 Medidas de Tendencia Central](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/aa8d3c891815b477a11a79f7bfb67b95e33b1a59/EDA/2.2%20Medidas%20Tendencia%20Central.md)
+
+[2.3 Correlación de Variables](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/aa8d3c891815b477a11a79f7bfb67b95e33b1a59/EDA/2.3%20Correlaci%C3%B3n%20Variables.md)
+
+[2.4 Creación de Cuartiles](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/aa8d3c891815b477a11a79f7bfb67b95e33b1a59/EDA/2.4%20Creaci%C3%B3n%20de%20cuartiles.md)
+
 
 
