@@ -1,4 +1,4 @@
-### Cálculo de Cuartiles con BigQuery
+# 2.4 Cálculo de Cuartiles con BigQuery
 
 Se calcularon los cuartiles para tres variables de nuestro conjunto de datos: **precio original**, **precio descontado**, y el **score de sentimiento**. Los cuartiles nos permiten dividir los datos en cuatro partes iguales, proporcionando una visión clara de la distribución de los valores.
 
