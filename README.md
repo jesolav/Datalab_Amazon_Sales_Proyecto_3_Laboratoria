@@ -81,4 +81,12 @@ Este archivo contiene información sobre las reseñas de productos en Amazon. La
 [2.4 Creación de Cuartiles](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/aa8d3c891815b477a11a79f7bfb67b95e33b1a59/EDA/2.4%20Creaci%C3%B3n%20de%20cuartiles.md)
 
 
+✅ [Validar Hipótesis:]
 
+[3.1 Hipótesis 1](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/228ead1ee636f06acbb3a1cfe761ae9ca2f92ad2/Validar%20Hip%C3%B3tesis/Hip%C3%B3tesis%201.md)
+
+[3.2 Hipótesis 2](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/228ead1ee636f06acbb3a1cfe761ae9ca2f92ad2/Validar%20Hip%C3%B3tesis/Hip%C3%B3tesis%202.md)
+
+[3.3 Hipótesis 3](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/228ead1ee636f06acbb3a1cfe761ae9ca2f92ad2/Validar%20Hip%C3%B3tesis/Hip%C3%B3tesis%203.md)
+
+[3.4 Hipótesis 4](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/228ead1ee636f06acbb3a1cfe761ae9ca2f92ad2/Validar%20Hip%C3%B3tesis/Hip%C3%B3tesis%204.md)
