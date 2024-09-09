@@ -61,7 +61,9 @@ Correlación con outliers: 0.0983
 Correlación sin outliers: 0.1695
 
 ### Gráficos
+
 Gráfico con outliers: 
+
  <img width="585" alt="image" src="https://github.com/user-attachments/assets/10b811e7-136d-4ad1-9775-a1849a1dcd73">
 
 
