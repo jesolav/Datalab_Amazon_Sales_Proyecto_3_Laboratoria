@@ -61,6 +61,9 @@ Esta correlación indica una relación positiva moderada entre el sentimiento pr
 ## Gráfico: Relación entre Sentimiento Promedio y Calificación del Producto
 <img width="570" alt="image" src="https://github.com/user-attachments/assets/a363b4c3-83ad-45ab-892c-19e9c9286c92">
 
+<img width="1056" alt="image" src="https://github.com/user-attachments/assets/821fffe9-d048-46dc-b10c-fcaccf1a45df">
+
+
 ## Interpretación de los Resultados
 - Correlación:
 
