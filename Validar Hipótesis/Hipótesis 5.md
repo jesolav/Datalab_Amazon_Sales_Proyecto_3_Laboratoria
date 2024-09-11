@@ -1,7 +1,9 @@
-# **4. Técnica de Análisis**
+# **3. Validar Hipótesis**
 
-## 4.1 Regresión Lineal
+## 3.5 Hipótesis 5: Los productos con mayores descuentos tienen un sentimiento más positivo.
 
+
+Regresión Lineal
 
 ```python
 from sklearn.linear_model import LinearRegression
