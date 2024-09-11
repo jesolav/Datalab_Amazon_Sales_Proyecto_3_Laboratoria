@@ -1,9 +1,9 @@
 # **3. Validar Hipótesis**
 
-## 3.5 Hipótesis 5: Los productos con mayores descuentos tienen un sentimiento más positivo.
+## 3.5 Hipótesis 5: ¿Es posible predecir si un producto tendrá una calificación positiva o negativa?.
 
 
-Regresión Lineal
+### Regresión Lineal
 
 ```python
 from sklearn.linear_model import LinearRegression
@@ -43,7 +43,7 @@ print(f'Intersección: {model.intercept_}')
 * El modelo explica aproximadamente el 65.76% de la variabilidad en la calificación promedio.
 * El modelo puede ser utilizado para predecir la calificación promedio de un producto basado en estas variables.
 
-## 4.2 Regresión Logistica
+### Regresión Logistica
 
 ```python
 from sklearn.linear_model import LogisticRegression
