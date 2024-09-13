@@ -92,6 +92,10 @@ Este archivo contiene información sobre las reseñas de productos en Amazon. La
 [3.4 Hipótesis 4](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/228ead1ee636f06acbb3a1cfe761ae9ca2f92ad2/Validar%20Hip%C3%B3tesis/Hip%C3%B3tesis%204.md)
 
 
+[3.5 Hipótesis 5](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/86968a72712da3c5de757f6b83514e6ebd0b7495/Validar%20Hip%C3%B3tesis/Hip%C3%B3tesis%205.md)
+
+[3.6 Notebook Python Análisis Hipótesis](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/86968a72712da3c5de757f6b83514e6ebd0b7495/Validar%20Hip%C3%B3tesis/C%C3%B3digo%20Python%20Hip%C3%B3tesis.ipynb)
+
 
 💡 [Enlaces de interés:]
 4.1 Presentación
