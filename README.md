@@ -103,10 +103,12 @@ Este archivo contiene información sobre las reseñas de productos en Amazon. La
 
 4.2 Video Presentación
 
-4.3 Dashboard
-|:------------: |:---------------:| 
-| Camila Maluenda         | [Link](dot.com) | 
-| Jenifer Soto         | [Link](https://public.tableau.com/views/Datalab_amazon_tableau/ResumenVentas?:language=es-ES&:sid=&:display_count=n&:origin=viz_share_link&:device=desktop) | 
+4.3 Dashboard:
+
+| <!-- --> | 
+|:------------: |  
+| [Camila Maluenda](dot.com) | 
+| [Jenifer Soto](https://public.tableau.com/views/Datalab_amazon_tableau/ResumenVentas?:language=es-ES&:sid=&:display_count=n&:origin=viz_share_link&:device=desktop) | 
 
 
 4.4 Notebook Google Colab
