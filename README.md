@@ -64,7 +64,7 @@ Este archivo contiene información sobre las reseñas de productos en Amazon. La
 
 [1.5 Estandarización de tabla amazon_reviews para análisis de sentimientos](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/362ad879b7911c3002fb7e3ecb6b8ea3fb8c78c5/Procesar%20y%20preparar%20la%20base%20de%20datos/1.6%20Estandarizaci%C3%B3n%20de%20tabla%20amazon_reviews%20para%20an%C3%A1lisis%20de%20sentimientos.md)
 
-[1.6 sentiment_analysis](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/3b601b2d338bdb574fcc235c2debf93c65bc3ed6/Procesar%20y%20preparar%20la%20base%20de%20datos/1.6%20sentiment_analysis.ipynb)
+[1.6 Sentiment_Analysis](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/3b601b2d338bdb574fcc235c2debf93c65bc3ed6/Procesar%20y%20preparar%20la%20base%20de%20datos/1.6%20sentiment_analysis.ipynb)
 
 [1.7 Unión Tablas](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/b146729137fb451c42f4f70d2268e2d943382e66/Procesar%20y%20preparar%20la%20base%20de%20datos/1.7%20Uni%C3%B3n%20de%20Tablas.md)
 
