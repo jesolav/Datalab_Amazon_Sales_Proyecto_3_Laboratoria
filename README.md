@@ -52,7 +52,7 @@ Este archivo contiene información sobre las reseñas de productos en Amazon. La
 </details>
 </details>
 
-### 💻 [Procesamiento y preparación para analisis de datos:] 
+## 💻 [Procesamiento y preparación para analisis de datos:] 
 
 [1.1 Conectar/importar datos a herramientas](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/362ad879b7911c3002fb7e3ecb6b8ea3fb8c78c5/Procesar%20y%20preparar%20la%20base%20de%20datos/1.1%20Conectar-importar%20datos%20a%20herramientas.md)
 
@@ -69,7 +69,7 @@ Este archivo contiene información sobre las reseñas de productos en Amazon. La
 [1.7 Unión Tablas](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/b146729137fb451c42f4f70d2268e2d943382e66/Procesar%20y%20preparar%20la%20base%20de%20datos/1.7%20Uni%C3%B3n%20de%20Tablas.md)
 
 
-🔎 [Análisis exploratorio:]
+## 🔎 [Análisis exploratorio:]
 
 
 [2.1 Visualización de Distribuciones](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/b146729137fb451c42f4f70d2268e2d943382e66/EDA/2.1%20Visualizaci%C3%B3n%20Distribuciones.md)
@@ -81,7 +81,7 @@ Este archivo contiene información sobre las reseñas de productos en Amazon. La
 [2.4 Creación de Cuartiles](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/aa8d3c891815b477a11a79f7bfb67b95e33b1a59/EDA/2.4%20Creaci%C3%B3n%20de%20cuartiles.md)
 
 
-✅ [Validar Hipótesis:]
+## ✅ [Validar Hipótesis:]
 
 [3.1 Hipótesis 1](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/228ead1ee636f06acbb3a1cfe761ae9ca2f92ad2/Validar%20Hip%C3%B3tesis/Hip%C3%B3tesis%201.md)
 
@@ -97,7 +97,7 @@ Este archivo contiene información sobre las reseñas de productos en Amazon. La
 [3.6 Notebook Python Análisis Hipótesis](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/86968a72712da3c5de757f6b83514e6ebd0b7495/Validar%20Hip%C3%B3tesis/C%C3%B3digo%20Python%20Hip%C3%B3tesis.ipynb)
 
 
-💡 [Enlaces de interés:]
+## 💡 [Enlaces de interés:]
 
 [4.1 Presentación](https://drive.google.com/file/d/1KK1ZODEqtDcIk36mK1UNNfnTZskr14v5/view?usp=drive_link)
 
