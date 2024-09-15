@@ -111,7 +111,8 @@ Este archivo contiene información sobre las reseñas de productos en Amazon. La
 | [Jenifer Soto](https://public.tableau.com/views/Datalab_amazon_tableau/ResumenVentas?:language=es-ES&:sid=&:display_count=n&:origin=viz_share_link&:device=desktop) | 
 
 
-4.4 Notebook Google Colab
+[4.4 Notebook Google Colab](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/3bbf5b66b0cb81f104cbda82190df9d1be8e97d8/analisis_datalab.ipynb)
+
 
 [4.5 Conclusiones y Recomendaciones](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/9fa4144e83f42a466be6ab2a7e7828356c79fe87/Conclusiones/Conclusiones.md)
 
