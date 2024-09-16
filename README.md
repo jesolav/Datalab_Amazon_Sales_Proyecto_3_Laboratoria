@@ -102,7 +102,7 @@ Este archivo contiene información sobre las reseñas de productos en Amazon. La
 
 [4.1 Presentación](https://drive.google.com/file/d/1KK1ZODEqtDcIk36mK1UNNfnTZskr14v5/view?usp=drive_link)
 
-4.2 Video Presentación
+[4.2 Video Presentación]([https://drive.google.com/file/d/1KK1ZODEqtDcIk36mK1UNNfnTZskr14v5/view?usp=drive_link](https://www.loom.com/share/6dbc0b16a8764c15b3a0d3f4c5fdb277?sid=b98917bf-be56-4070-83ba-c86fc6c53051))
 
 4.3 Dashboard:
 
