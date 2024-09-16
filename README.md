@@ -104,16 +104,9 @@ Este archivo contiene información sobre las reseñas de productos en Amazon. La
 
 [4.2 Video Presentación](https://www.loom.com/share/6dbc0b16a8764c15b3a0d3f4c5fdb277?sid=b98917bf-be56-4070-83ba-c86fc6c53051)
 
-4.3 Dashboard:
+[4.3 Dashboard](https://public.tableau.com/views/Datalab_amazon_tableau/ResumenVentas?:language=es-ES&:sid=&:display_count=n&:origin=viz_share_link&:device=desktop) | 
 
-| <!-- --> | 
-|:------------: |  
-| [Camila Maluenda](dot.com) | 
-| [Jenifer Soto](https://public.tableau.com/views/Datalab_amazon_tableau/ResumenVentas?:language=es-ES&:sid=&:display_count=n&:origin=viz_share_link&:device=desktop) | 
-
-
-[4.4 Notebook Google Colab](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/3bbf5b66b0cb81f104cbda82190df9d1be8e97d8/analisis_datalab.ipynb)
-
+[4.4 Notebook Google Colab](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/4445a486ccb7d1aa67124edd75b9c60784edcf8f/An%C3%A1lisis_Datalab.ipynb)
 
 [4.5 Conclusiones y Recomendaciones](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/9fa4144e83f42a466be6ab2a7e7828356c79fe87/Conclusiones/Conclusiones.md)
 
