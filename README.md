@@ -80,6 +80,7 @@ Este archivo contiene información sobre las reseñas de productos en Amazon. La
 
 [2.4 Creación de Cuartiles](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/aa8d3c891815b477a11a79f7bfb67b95e33b1a59/EDA/2.4%20Creaci%C3%B3n%20de%20cuartiles.md)
 
+[2.5 Prueba Significancia](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/dd15304ad08f8b1fa655c948ec389bd625ad7898/EDA/2.5%20Prueba%20de%20Significancia.md)
 
 ## ✅ [Validar Hipótesis:]
 
