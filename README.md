@@ -104,7 +104,7 @@ Este archivo contiene información sobre las reseñas de productos en Amazon. La
 
 [4.2 Video Presentación](https://www.loom.com/share/6dbc0b16a8764c15b3a0d3f4c5fdb277?sid=b98917bf-be56-4070-83ba-c86fc6c53051)
 
-[4.3 Dashboard](https://public.tableau.com/views/Datalab_amazon_tableau/ResumenVentas?:language=es-ES&:sid=&:display_count=n&:origin=viz_share_link&:device=desktop) | 
+[4.3 Dashboard](https://public.tableau.com/views/Datalab_amazon_tableau/ResumenVentas?:language=es-ES&:sid=&:display_count=n&:origin=viz_share_link&:device=desktop) 
 
 [4.4 Notebook Google Colab](https://github.com/jesolav/Datalab_Amazon_Sales_Proyecto_3_Laboratoria/blob/4445a486ccb7d1aa67124edd75b9c60784edcf8f/An%C3%A1lisis_Datalab.ipynb)
 
